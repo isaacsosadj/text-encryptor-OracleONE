@@ -28,11 +28,17 @@ body {
 .btn {
     border: none;
     padding: 2.4rem;
-    width: 34.3rem;
+    width: 100%;
     border-radius: 2.4rem;
     margin-bottom: 2rem;
     font-size: 1.6rem;
     cursor: pointer;
+}
+
+@media (min-width: 480px) {
+    .btn {
+        width: 50%;
+    }
 }
 
 .btn--blue {
@@ -60,6 +66,12 @@ body {
     height: 25rem;
 }
 
+@media (min-width: 480px) {
+    .encryptor__input {
+        height: 30rem;
+    }
+}
+
 .encryptor__info {
     display: flex;
     gap: 0.8rem;
@@ -70,7 +82,15 @@ body {
     color: var(--gray-400);
 }
 
+@media (min-width: 480px) {
+    .buttons {
+        display: flex;
+        gap: 24px;
+    }
+}
+
 .footer {
     color: #343A40;
     text-align: center;
 }
+
