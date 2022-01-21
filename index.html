@@ -15,26 +15,35 @@
         <header class="header">
             <img class="header__logo" src="img/logo.svg" alt="alura logo">
         </header>
-    
-        <div class="encryptor">
-            <textarea class="encryptor__input" id="encryptor_input">Type the text here</textarea>
-    
-            <div class="encryptor__info">
-                <img src="img/info-icon.svg" alt="info icon">
-                <p>Only lowercase letters and no accents</p>
+
+        <div class="main">
+            <div class="encryptor">
+                <textarea class="encryptor__input" id="encryptor_input">Type the text here</textarea>
+                
+                <div class="encryptor__bottom">
+                    <div class="encryptor__info">
+                        <img src="img/info-icon.svg" alt="info icon">
+                        <p>Only lowercase letters and no accents</p>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="btn btn--blue" id="encrypt">Encrypt</button>
+                        <button class="btn btn--transparent" id="decrypt">Decrypt</button>
+                    </div>
+                </div>
             </div>
-            
-            <div class="buttons">
-                <button class="btn btn--blue" id="btn_encriptar">Encrypt</button>
-                <button class="btn btn--transparent" id="btn_desencriptar">Decrypt</button>
+    
+            <div class="messages">
+                <img src="img/illustration.svg" alt="ilustracion">
+                <p class="message--bold">No message found</p>
+                <p class="message--light">Type the text you want to encrypt or decrypt</p>
             </div>
         </div>
     </div>
 
     <footer class="footer">
         <p>AluraLATAM + Oracle ONE - First challenge</p>
-        </p>Made by <a href="https://github.com/isaacsosadj" target="_blank">Isaac Sosa</a></p>
+        <p>Made by <a href="https://github.com/isaacsosadj" target="_blank">Isaac Sosa</a></p>
     </footer>
-
 </body>
 </html>
