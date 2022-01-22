@@ -10,33 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
-        <header class="header">
-            <img class="header__logo" src="img/logo.svg" alt="alura logo">
-        </header>
 
-        <div class="main">
-            <div class="encryptor">
-                <textarea class="encryptor__input" id="encryptor_input">Type the text here</textarea>
-                
-                <div class="encryptor__bottom">
-                    <div class="encryptor__info">
-                        <img src="img/info-icon.svg" alt="info icon">
-                        <p>Only lowercase letters and no accents</p>
-                    </div>
+<body>
+    <div class="content">
+        <div class="container">
+            <header class="header">
+                <img class="header__logo" src="img/logo.svg" alt="alura logo">
+            </header>
+
+            <div class="main">
+                <div class="encryptor">
+                    <textarea class="encryptor__input" id="encryptor_input">Type the text here</textarea>
                     
-                    <div class="buttons">
-                        <button class="btn btn--blue" id="encrypt">Encrypt</button>
-                        <button class="btn btn--transparent" id="decrypt">Decrypt</button>
+                    <div class="encryptor__bottom">
+                        <div class="encryptor__info">
+                            <img src="img/info-icon.svg" alt="info icon">
+                            <p>Only lowercase letters and no accents</p>
+                        </div>
+                        
+                        <div class="buttons">
+                            <button class="btn btn--blue" id="encrypt">Encrypt</button>
+                            <button class="btn btn--transparent" id="decrypt">Decrypt</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="messages">
-                <img src="img/illustration.svg" alt="ilustracion">
-                <p class="message--bold">No message found</p>
-                <p class="message--light">Type the text you want to encrypt or decrypt</p>
+        
+                <div class="messages">
+                    <img src="img/illustration.svg" alt="ilustracion">
+                    <div class="messages__text">
+                        <p class="message--bold">No message found</p>
+                        <p class="message--light">Type the text you want to encrypt or decrypt</p>
+                    </div>
+
+                    <div class="messages__encrypted display--none">
+                        <textarea class="message--light fs--24" id="encrypted__text"></textarea>
+                        <button class="btn btn--transparent mb--0">Copy</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -45,5 +55,7 @@
         <p>AluraLATAM + Oracle ONE - First challenge</p>
         <p>Made by <a href="https://github.com/isaacsosadj" target="_blank">Isaac Sosa</a></p>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
