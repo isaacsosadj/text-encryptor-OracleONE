@@ -20,7 +20,7 @@
 
             <div class="main">
                 <div class="encryptor">
-                    <textarea class="encryptor__input" id="encryptor_input">Type the text here</textarea>
+                    <textarea class="encryptor__input" id="encryptor_input" placeholder="Type the text here"></textarea>
                     
                     <div class="encryptor__bottom">
                         <div class="encryptor__info">
@@ -43,8 +43,8 @@
                     </div>
 
                     <div class="messages__encrypted display--none">
-                        <textarea class="message--light fs--24" id="encrypted__text"></textarea>
-                        <button class="btn btn--transparent mb--0">Copy</button>
+                        <textarea class="message--light fs--24" id="encrypted__text" readonly></textarea>
+                        <button class="btn btn--transparent mb--0" id="copy">Copy</button>
                     </div>
                 </div>
             </div>
